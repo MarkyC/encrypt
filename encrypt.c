@@ -285,7 +285,7 @@ int main(int argc, char *argv[]) {
 		}
 
 	}
-/*
+
 	// Spawn Work Threads 
 	for (i = 0; i < nWork; i++) {
 		if (pthread_create(&workThread[i], NULL, encrypt_data, NULL)) {
@@ -301,7 +301,7 @@ int main(int argc, char *argv[]) {
 			return EXIT_FAILURE;
 		}
 	}
-	*/
+	
 	// Wait for In Threads
 	for (i = 0; i < nIn; i++) {
 		pthread_join(inThread[i], NULL);
